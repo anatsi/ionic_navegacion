@@ -1,18 +1,33 @@
-<!--
-  Generated template for the PrincipalPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>principal</ion-title>
+  <ion-navbar color='primary'>
+    <ion-title text-center>Principal - root</ion-title>
+    <ion-buttons>
+      <button ion-buttons
+              icon-only
+              (click)='mostrarMenu()'>
+        <ion-icon name='menu'></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+
+  <button ion-button
+          color='primary'
+          block
+          (click)='navegarPagina();'>
+    Ir página 2
+  </button>
+
+  <button ion-button
+          color='secondary'
+          block
+          [navPush]='pagina2'>
+    Ir página 2 - HTML
+  </button>
 
 </ion-content>

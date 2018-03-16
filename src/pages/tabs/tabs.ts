@@ -1,12 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the TabsPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { PrincipalPage, AjustesPage } from "../index.paginas";
 
 @Component({
   selector: 'page-tabs',
@@ -14,11 +7,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class TabsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  tab1:any;
+  tab2:any;
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad TabsPage');
+  constructor() {
+    this.tab1=PrincipalPage;
+    this.tab2=AjustesPage;
   }
 
 }
